@@ -1,0 +1,87 @@
+h1{
+    font-size: 70px;
+    margin-top: 10%;
+    margin-bottom: 0%;
+    font-weight: 500;
+    font-family: Avenir;
+    
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+.number{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-size: 220px;
+    font-family: Avenir;
+    font-weight:400;
+    transition: all 0.5s;
+}
+
+
+button{
+    font-size: 20px;
+    font-family: Avenir;
+    font-weight: 500;
+    width: 160px;
+    height: 55px;
+    border-radius: 10px;
+    border-style: none;
+    margin: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    background-color: white;
+    transition: all 0.4s;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+button:active{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.thegrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+@media(max-width: 800px){
+    .thegrid{
+        grid-template-columns: 1fr 1fr ;
+    }
+    .button{
+        margin-bottom: 15px;
+    }
+}
+@media(max-height: 600px){
+    body{
+        transform: scale(0.8);
+        margin: 5px;
+    }
+    h1{
+        margin-top: 1%;
+    }
+    .number{
+        transform: scale(0.7);
+    }
+}
+@media(max-height: 400px){
+    body{
+        transform: scale(0.6);
+        margin: 5px;
+    }
+    h1{
+        margin-top: 1px;
+    }
+    .number{
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
